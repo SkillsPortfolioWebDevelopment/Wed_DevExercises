@@ -1,0 +1,36 @@
+/*Moving all styling properties in the CSS file*/
+/* I believe that using CSS as our external styling way, can really help us to be more organized! */  
+
+/* The first style in the given HTML file is <!---html lang="en" style="background: #eeeeee"---> */
+/* I transfer it here by using "body." This enable me to change the whole background of my HTML file */
+body {
+    background-color: #eeeeee;
+  }
+
+/* The second style in the given HTML file is <h1 style="font-size: 35px; color: #ff0000; text-align: center; font-family: Arial, Helvetica, sans-serif; text-decoration: underline"> */
+/* I copy-pasted it here and fixed it this way: */ 
+h1 {
+    font-size: 35px;
+    color: #ff0000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+/* Like what i did with h1, I also copy-pasted this and removed it in my HTML file and organized it here */
+/* All <p> tags will be styled like this except one <p> tag (p tag with ID.) */
+p {
+    font-size: 18px;
+    color: #111111;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Supposedly this is a p style, but because it has a different style on the given, We gave it and Id, which is <p id=("one")>. here in our CSS file we use #one to define it. */ 
+#one {
+    font-size: 18px;
+    color: #00ff00;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}    
+
+

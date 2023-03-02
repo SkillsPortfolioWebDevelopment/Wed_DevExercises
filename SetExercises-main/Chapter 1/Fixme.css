@@ -1,0 +1,39 @@
+/* This is my stylesheet which is connected to my HTML file*/
+/* CSS (Cascading Style Sheets) helps us to be more organize on styling our HTML file. */
+/* It is simpler to maintain and update a website's design when developers use CSS to separate the presentation and layout of a web page from the content.*/
+
+/* styling my HTML as the given task shows */
+
+
+/* First i style all the text in  "<h1>" tag. */
+/* In CSS, we always use the key: value format. */
+h1 { 
+    font-size: 3 rem; /* "font-size" as our key is partnered with our desired size. In this case i used rem(root-em) to size my text.*/
+    text-align: center; /* "text-align" as our is partnered with our desired position or format of our text. Example of values for "text-align" - center, left, right, justifty and etc... tip:( Some coding app will suggest )*/ 
+} 
+
+/* styling text in  my "<h3 id="author">" tag. */
+#author {
+    text-align: center;
+    font-style: italic; /* "font-style" can be partnered with - italic, bold, and oblique. */
+    font-weight: lighter; /* "font-weight" is used to control the weight of the font. It can be partnered with thin, light, extrabold and etc... */
+    font-size: 1.1rem;
+}
+
+/* styling my text in my "<h2>" tag. */
+h2 {
+    font-size: 1.25 rem; 
+    text-align: center;
+}
+
+/* styling my text in my "<p>" tag. */
+
+p { 
+    line-height: 1.3; /* "line-height" is used for the text spacing. */
+}
+
+/* styling the whole body part of my html */
+body {
+    font-family: Georgia; /*"font-family" is the key, and it should be partnered with a font name that you prefer to be your font. This will affect all text in our body tag */
+    background-color:aliceblue; /* "background-color" is to add your prefered color in the background */ 
+}
