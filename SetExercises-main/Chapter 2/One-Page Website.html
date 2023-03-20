@@ -1,0 +1,123 @@
+<!--Making a Webpage of We bare bears-->
+<!--This includes a navitagation bar,
+  An overview of the plot,  key information, cast and/or creative team, characters and  reviews
+A link to the actual website
+an external CSS file
+One link styled as a button.
+At least two classes.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>WE BARE BEARS!</title>
+  <link rel="stylesheet" href="wbb.css">   <!--Using an external stylesheet as my stylesheet-->
+</head>
+
+<body>
+    <div id="header"><h1> WE BARE BEARS!</h1></div>  <!--Using <div> and <id> to be more organize in my css/ This will help be to avoid being lost in my work -->
+
+    <nav> <!--Navigation tag--> <!--A section featuring navigation links, either to other documents or within the current content,-->
+      <!--<nav> element should be related to navigation, and it can include various HTML elements, such as lists, links, buttons, and forms. -->
+        <ul> <!--Inside the <nav> tag i added the partner <ul> and <li> to later on style with CSS-->
+          <li><a href="#overview">Overview</a></li> <!--Linking within my webpage-->
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#production">Production</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <!--End of navitigation section-->
+
+      <div id="overview"> <!--With (id="overview") I was able to link it to (a href="#overview") || should match enable to work -->
+        <h2> Overview</h2> 
+        <p>
+            Three brother bears, Grizzly, Panda and Ice Bear, 
+            attempt to find their place in civilized society, 
+            whether they're looking for food, 
+            trying to make human friends, 
+            or scheming to become famous on the internet. 
+            They explore the hipster environs of the San Francisco Bay Area, 
+            and it's clear the siblings have a lot to learn about a technologically driven world.
+        </p>
+      </div> 
+
+      <div id="table">
+        <table>
+          <tr>
+            <th>Genre:</th>
+            <td> Comedy, Slice of Life, Animated Sitcom</td>
+          </tr>
+          
+          <tr>
+            <th>Format:</th>
+            <td>Animated Series</td>
+          </tr>
+
+        <tr>
+          <th>Created by:</th>   
+          <td>Daniel Chong</td>
+
+        <tr>
+         <th>Directed by:</th>
+         <td>Manny Hernandez, Tony Puham (Art Director)</td>
+        </tr> 
+
+        <tr>
+          <th>No. of ep:</th>
+          <td>140 ep</td>
+         </tr> 
+        
+      </table> 
+      </div>
+
+    </br> </br> </br> </br> </br>
+      <div id="characters"> <!-- I did the same method with the proceeding division || <a href="#characters"> link to <div id="characters"> -->
+        <h2>Characters And Voice Actor</h2>
+        <ul>
+          <li>Grizzly (voiced by Eric Edelstein)</li>
+          <li>Panda (voiced by Bobby Moynihan)</li>
+          <li>Ice Bear (voiced by Demetri Martin)</li>
+          <li>Chloe (voiced by Charlyne Yi)</li>
+          <li>Nom Nom (voiced by Patton Oswalt)</li>
+          <li>Charlie / Bigfoot (voiced by Jason Lee)</li>
+        </ul>
+
+
+    </br> </br> </br> </br> </br>
+      <div id="production"> <!--<a href="production"> link to <div id="production"> -->
+        <h2> Production</h2>
+        <ul>
+          <li>Producer(s): Carrie Wilksen, Randy Myers (Supervising Producer)</li>
+          <li>Executive producer(s): Daniel Chong, Curtis Lelash, Jennifer Pelphrey, Brian A. Miller, Rob Sorcher</li>
+          <li>Composer(s): Ivan Barias</li>
+          <li>Production company(s): Cartoon Network Studios</li>
+          <li>Distributor: Warner Bros. Television Distribution</li>
+        </ul>
+
+      </div>
+    
+    </br> </br> </br> </br> </br>
+        <div id="reviews">  <!--<a href="reviews"> link to <div id="reviews"> -->
+        <h2>Featured Review</h2> <!--source: https://www.imdb.com/title/tt4839610/-->
+        <p> IMdb ratings: 7.9/10</p>
+        <p>
+          
+          We Bare Bears stars three bear brothers, Grizzly, Panda, and Ice Bear, as they try to assimilate into human society.
+
+          So far the commercials and trailers look great. The show itself is a treasure. It obviously has a bright future and is bound to become one of Cartoon Network's greatest hits.
+          
+          The comedy is appropriate and comes at the right times, great character development, good amount of drama for a children's show, and all around fun. It's one of best cartoons yet and is destined to fall into categories with hits such as, Regular Show, Adventure Time, Gumball, and more. This show is amazing, and you must watch it before you judge it. It would be horrible if someone mistakes this beauty as something less.</p>
+      </div>
+
+      
+      <div class="buttons"> <!--Using class tags--> <!--Linking to another web-->
+      <a href="https://www.netflix.com/title/80116921" target="_blank" class="btn1">Watch on Netflix</a><!--target="_blank" is a special keyword that will open links in a new tab every time.-->
+      <a href="https://www.bbc.co.uk/iplayer/episodes/m000qz54/we-bare-bears" target="_blank" class="btn2">Watch on BBC</a> <!--Using to -->
+      </div>
+    </body>
+  </html>
+
+
