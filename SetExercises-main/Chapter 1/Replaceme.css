@@ -25,8 +25,8 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Supposedly this is a p style, but because it has a different style on the given, We gave it and Id, which is <p id=("one")>. here in our CSS file we use #one to define it. */ 
-#one {
+/* Supposedly this is a p style, but because it has a different style on the given, We gave it a class, which is <p class=("one")>. here in our CSS file we use .one to define it. */ 
+.one {
     font-size: 18px;
     color: #00ff00;
     font-weight: 700;

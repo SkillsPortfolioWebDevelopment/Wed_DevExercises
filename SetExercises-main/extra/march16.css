@@ -1,0 +1,37 @@
+div {
+    display: incline-block; 
+    font-size: 20px; 
+    margin: 25px;
+    border: 4px solid black;
+    line-height: 100px;
+}
+
+body {
+    margin: 100px auto; width: max-content;
+}
+
+div#A {
+    border-color: gold;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+div#B {
+    border-color: pink;
+    box-shadow: 5px 5px 5px black inset;
+}
+
+div#C {
+    border-color: green;
+    text-shadow: 5px 5px 1px black;
+}
+
+
+div#D {
+    border-color: rgb(145, 164, 232);
+    filter: drop-shadow(5px 5px 1px black);
+}
+
+#E {
+    filter: drop-shadow(8px 8px 10px pink);
+}

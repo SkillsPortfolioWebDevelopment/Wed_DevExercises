@@ -15,18 +15,18 @@ At least two classes.-->
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width" /> <!--gives viewers proper format in every device-->
   <title>WE BARE BEARS!</title>
-  <link rel="stylesheet" href="wbb.css">   <!--Using an external stylesheet-->
+  <link rel="stylesheet" href="onepage.css">   <!--Using an external stylesheet-->
 </head>
 
 <body>
     <div id="header"><h1> WE BARE BEARS!</h1></div>  <!--Using <div> and <id> to be more organize in my css/ This will help be to avoid being lost in my work -->
 
-    <nav> <!--Navigation tag--> <!--A section featuring navigation links, either to other documents or within the current content,-->
-      <!--<nav> element should be related to navigation, and it can include various HTML elements, such as lists, links, buttons, and forms. -->
-        <ul> <!--Inside the <nav> tag i added the partner <ul> and <li> to later on style with CSS-->
-          <li><a href="#overview">Overview</a></li> <!--Linking within my webpage-->
+        <nav><!--Navigation tag--> <!--A section featuring navigation links, either to other documents or within the current content,-->
+             <!--<nav> element should be related to navigation, and it can include various HTML elements, such as lists, links, buttons, and forms. -->
+        <ul> <!--Inside the <nav> tag I added the partner <ul> and <li> to later on style with CSS-->
+          <li><a href="#overview">Overview</a></li> <!--Linking within just this webpage--> <!--Using "#" so I can link it with ids-->
           <li><a href="#characters">Characters</a></li>
           <li><a href="#production">Production</a></li>
           <li><a href="#reviews">Reviews</a></li>
@@ -37,13 +37,10 @@ At least two classes.-->
       <div id="overview"> <!--With (id="overview") I was able to link it to (a href="#overview") || should match enable to work -->
         <h2> Overview</h2> 
         <p>
-            Three brother bears, Grizzly, Panda and Ice Bear, 
-            attempt to find their place in civilized society, 
-            whether they're looking for food, 
-            trying to make human friends, 
-            or scheming to become famous on the internet. 
-            They explore the hipster environs of the San Francisco Bay Area, 
-            and it's clear the siblings have a lot to learn about a technologically driven world.
+          Three bear brothers, Grizzly, Panda, and Ice Bear, star in the animated television series "We Bare Bears," which follows their adventures. In an effort to blend in with human culture, these bears frequently visit San Francisco in order to locate food and learn more about their surroundings. Throughout the voyage, they encounter a variety of human and animal characters; some of these people assist them, while others provide difficulties.
+        </br> </br> 
+          The humorous series focuses on the bears' struggles to understand and use modern technologies, such as making viral videos or using social media. The bears' acceptance and embrace of individuals who are different from themselves also touches on the themes of diversity and inclusivity in the book.
+
         </p>
       </div> 
 
@@ -90,7 +87,7 @@ At least two classes.-->
 
 
     </br> </br> </br> </br> </br>
-      <div id="production"> <!--<a href="production"> link to <div id="production"> -->
+      <div id="production"> <!--<a href="#production"> link to <div id="production"> -->
         <h2> Production</h2>
         <ul>
           <li>Producer(s): Carrie Wilksen, Randy Myers (Supervising Producer)</li>
@@ -103,7 +100,7 @@ At least two classes.-->
       </div>
     
     </br> </br> </br> </br> </br>
-        <div id="reviews">  <!--<a href="reviews"> link to <div id="reviews"> -->
+        <div id="reviews">  <!--<a href="#reviews"> link to <div id="reviews"> -->
         <h2>Featured Review</h2> <!--source: https://www.imdb.com/title/tt4839610/-->
         <p> IMdb ratings: 7.9/10</p>
         <p>
@@ -116,7 +113,7 @@ At least two classes.-->
       </div>
 
       
-      <div class="buttons"> <!--Using class tags--> <!--Linking to another web-->
+     <!--Using class tags--> <!--Linking to another web-->
       <a href="https://www.netflix.com/title/80116921" target="_blank" class="btn1">Watch on Netflix</a><!--target="_blank" is a special keyword that will open links in a new tab every time.-->
       <a href="https://www.bbc.co.uk/iplayer/episodes/m000qz54/we-bare-bears" target="_blank" class="btn2">Watch on BBC</a> <!--Using class to differentiate  -->
       </div>

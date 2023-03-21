@@ -1,0 +1,24 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Exercise 1</title>
+        </head>
+    </html>
+    <body>
+        <!--<h> is for headings and <p> is for paragraph put text then close it with a backlash </h></p>-->
+        <h1>Welcome</h1>
+        <!--<em> for italic text-->
+        <p>We are learning<em> HTML</em></p>
+        <h2>Welcome</h2>
+        <!--<strong> for bold text-->
+        <p>This is our <strong>2nd semester</strong></p>
+        <h3>This is the 3rd heading</h3>
+        <p>A paragraph!</p>
+        <h4>This is the 3rd heading</h4>
+        <p>A paragraph!</p>
+        <h5>This is the 3rd heading</h5>
+        <p>A paragraph!</p>
+        <h6>This is the 3rd heading</h6>
+        <p>A paragraph!</p>
+    </body>
+</DOCTYPE>

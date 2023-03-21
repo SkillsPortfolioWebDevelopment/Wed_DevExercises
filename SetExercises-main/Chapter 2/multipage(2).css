@@ -1,0 +1,111 @@
+
+/*I Made a different CSS file for the main page CSS is a different concept */
+
+/*I used this CSS for several of my webpages */
+
+
+/* Although I copied almost the whole thing of my "one-page website.css,"
+I still added and change somethings */
+
+#header {
+    height: 150px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);; /* I used: (https://cssgradient.io/) to help me to a gradient */
+    text-align: center;
+    line-height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+h2 {
+    border-bottom: #8675A9 solid 11px;
+    margin-right: 600px;
+    font-size: 30px;
+}
+
+
+.menu a.active {
+      background-color: #5b4f72;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+nav {
+      background-color:#8675A9;   
+      color: #fff;
+      padding: 10px; 
+}
+     
+      nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      }
+        
+   
+        nav li {
+        display: inline-block;
+        margin-right: 10px;
+        }
+        
+        nav a {
+        color: #fff;
+        text-decoration: none; 
+        padding: 5px;
+        }
+        
+        nav a:hover{ 
+        background-color: #b4536b; 
+    
+        }
+       
+
+/* other of my webpage may not have a table element.
+it will still not affect it */
+
+/* same goes for the button part */
+
+    table, th, td {
+        border: solid 5px rgb(255, 255, 255);
+        border-collapse: collapse; /* When border-collapse is set to collapse, adjacent table cells share borders, and the borders between them are merged into a single border. */
+        margin-right: 600px;  
+    }
+            
+    th, td {
+        background-color: #ebc9e6; 
+    }
+
+     /* Making a button */
+
+     .btn1 {
+        background-color: rgb(192, 48, 48);
+        color: #000000;
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px; /* Makes rounded border side */
+        }
+    
+        .btn2 {
+            background-color: rgb(206, 176, 243);
+            color: #000000;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            }
+    
+        .btn1:hover,.btn2:hover {
+            color:rgb(255, 255, 255)
+        }    
+    
+        
+        #reviews p {
+        font-style: italic;
+        }
+

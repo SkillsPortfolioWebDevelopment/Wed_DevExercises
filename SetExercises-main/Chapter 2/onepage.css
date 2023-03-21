@@ -97,7 +97,7 @@ body {
         color:rgb(255, 255, 255)
     }    
 
-    
+    /* only the <p> inside <div id="reviews> will be change */
     #reviews p {
     font-style: italic;
     }

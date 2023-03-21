@@ -74,7 +74,9 @@ Hint2: You should aim to achieve this using only four blocks of CSS in your styl
 
 ### Multi-page website
 
-Using the one-page website you created, clone it into a new directory and split the information down into a simple multi-page website.
+Using the one-page website you created,
+clone it into a new directory
+and split the information down into a simple multi-page website.
 
 * An individual page for: plot, key information, cast and/or creative team, characters and any reviews you can find. 
 * Put your new pages in a subdirectory called "pages".
