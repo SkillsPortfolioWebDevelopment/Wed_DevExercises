@@ -2,10 +2,10 @@
 
 /*  Styling the "We Bare Bears" to make it seem like the webpage title */
 #header {
-    height: 150px;
+    height: 150px; /* height of a section */
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);; /* I used: (https://cssgradient.io/) to help me to a gradient */
     text-align: center;
-    line-height: 200px;
+    line-height: 200px; /* for my text position */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
