@@ -1,0 +1,158 @@
+/*--external styling sheet for my html file */
+
+
+/*DEFAULT STYLE */
+body {
+background: rgb(191,236,244);
+background: linear-gradient(322deg, rgba(191,236,244,1) 27%, rgba(252,198,164,1) 58%, rgba(253,172,179,1) 80%);
+}
+
+/* * * * * STYLING THE UPPER PART/ HEADER OF THE PAGE * * * * */
+header {
+    font-family:'Candara' ;
+    color:white;
+    border-bottom: 2px solid white; /* ADDING A DIVISION EFFECT WITH USING "BORDER BOTTOM AS A LINE UNDER HEADER */
+}
+
+/*WEB DEV TEXT IN HEADER*/
+h1 {
+    font-size: 25px;
+    line-height: 15px;
+    float: left; /*PUTTING IT IN THE LEFT SIDE */
+    font-family:'Candara' ;
+    
+}
+
+/*BORDER FOR "COURSES" TEXT */
+#border {
+    line-height: 50px;
+    height: 30px;
+    border: solid white 1px;
+    width: 90px;
+    padding-top: 0px;
+    margin-right: 400px;
+}
+/*ADDING AN ARROW DOWN BESIDE THE "COURSES" TEXT */
+.arrow {
+    margin-left: 10px;
+    margin-bottom: 3px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+  }
+
+/*CORRECTING THE ANGLE OF THE ARROW */
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+/* * * * * MENU BAR PART * * * * */
+
+nav {
+height: 80px;/*POSITION */
+}
+
+nav ul {
+    list-style-type: none; /* REMOVING BULLETS */
+}
+
+nav li {
+    display: inline-block;
+    float: right; /*PUTTING THE LIST IN THE RIGHT SIDE */
+}
+
+/* FIXING LINK STYLE */
+li a {
+    display: inline-block;
+    color: white;
+    padding: 19px 23px;
+    text-decoration: none;
+}
+
+/* * * * * MAIN CONTENT OF MY WEBPAGE * * * * */
+main {
+    margin: 80px;
+    color: rgb(42, 44, 57);
+    margin-bottom: 10px;
+    
+}
+
+#oneheading {
+    font-size: 35px;
+}
+
+/* ADDING DIVISION EFFECT WITH BORDER */
+#twomain {
+    border-right:3px solid white ;
+}
+
+#fourmain {
+    border-left: solid white 3px;
+}
+
+
+/* * * * * STYLING ARTICLE INSIDE THE MAIN CONTENT * * * * */
+article{
+    background-color: pink;
+    display: flex;
+    gap: 80px;
+    border: solid 3px white;
+    border-radius: 10px;
+}
+
+/*REMOVING THE BULLET STYLE FROM THE LIST */
+li {
+    display: inline-block;
+}
+
+/* STYLING THE INTRODUCTION IN MAIN CONTENT */
+h2 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family:'Candara' ;
+}
+
+/* STYLING THE SUBJECT OF THE 3 DIFFERENT DIVISION */
+h3 {
+    border-radius: 10px;
+    height: 53px;
+    text-align: center;
+    line-height: 50px ;
+    font-family:'Candara' ;
+}
+
+/*STYLING THE BUTTON */
+  button {
+    background-color: rgb(222, 90, 152);
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease; /*MAKING IT MORE CREATIVE WITH TRANSITION */
+    float: right;
+    margin-right: 80px;
+    margin-bottom: 20px;
+  }
+
+  /*ADDING A HOVER AND EFFECTS */
+  button:hover {
+    background-color: rgb(180, 55, 124);
+    color: white;
+    box-shadow: 0px 5px 10px rgba(167, 57, 165, 0.3);
+    transform: translateY(-2px);
+  }
+
+/* * * * * FINALLY THE LAST PART - STYLING THE FOOTER AND POSITIONING IT * * * * */
+footer {
+    text-align: center;
+    background-color: white;
+    margin-top: 90px;
+    height: 33px;
+    line-height: 33px;
+}
+
+
+

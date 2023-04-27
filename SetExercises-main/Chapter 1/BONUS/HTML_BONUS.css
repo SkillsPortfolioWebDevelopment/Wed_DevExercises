@@ -1,0 +1,66 @@
+
+/*Stylesheet for my Bonusss pagee! */
+/*Including a minimum of 8 CSS properties. */
+
+/* Giving my whole webpage a color */
+body {
+    background-color: #FFF1DC;
+}
+
+/* styling my <div><h1> THIS IS BONUS WEBPAGE</h1></div> */
+div {
+    background-color:#804674;
+    height: 200px; /* Boxes content height is defined by the height property in CSS. */           
+    text-align: center;
+}
+
+/* my h1 tag is inside a <div>, therefore <div> styling will be applied */
+h1 {
+    color: white;
+    font-family:'Trebuchet MS';
+    margin: 0px; /* this to forms a space around the element */
+    line-height: 200px; /* this is used to set the distance between lines of text.*/
+}
+
+/*------------------------------------*/
+
+ /* Styling a different heading Z(<h3>) */
+h3 { 
+    color: white;
+    font-family:'Trebuchet MS';
+    margin: 0px;
+    text-align: center;
+    letter-spacing: 1rem; /* Give spaces between letters */
+    background-color: rgb(0, 0, 0);
+}
+
+p {
+    margin-left: 50px; /* creates margin on the left side */
+    margin-right: 50px; /* creates margin on the right side */
+    text-align: justify;
+}
+
+
+/* We can see here the difference of class and id. #- for ids, .-for classes */
+#p1 {
+    color:red;
+}
+
+
+.section {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color:#804674;
+}
+
+#p2 {
+    background-color:#F7F1E5;
+}
+
+h2 {
+    text-transform: capitalize; /* Makes the letter all capital */
+    text-align: center;
+    font-size: larger;
+}
+
+

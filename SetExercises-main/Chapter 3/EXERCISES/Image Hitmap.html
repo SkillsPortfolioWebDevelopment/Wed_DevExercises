@@ -1,0 +1,75 @@
+<!--A bonus exercise-->
+<!--I will be doing a hitmap in which when we click somewhere and image it directs us to another page--> 
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"  />  
+        <title>HITMAP!</title>
+        <link rel="stylesheet" href="march16.css">
+</head>
+
+<!--Interal CSS styling-->
+<style>
+    /* Image center */
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(10px 10px 10px rgb(129, 22, 39)) ; /*adding design */
+    }
+
+    /*Intruction */
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /*fixing the style of the info under the image */
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+</style>
+
+
+<body> 
+ <h1>Hitmap images</h1>   <!--Just for introduction-->
+ <!--to do this first we add the image link. the add a alt attribute incase the users can't avail the image -->
+ <!--usemap attribute to link to a map tag-->
+<img src="https://i.pinimg.com/564x/19/46/02/1946025607dea1432f49b3e7f0f84f3f.jpg"  alt="deskplace" usemap="#map" width="500" height="500">
+<map name = "map"> <!--this should match with usemap value -->
+          <!--area shape helps us to easily add link to a shape in an image || use to identify the shape -->
+          <!--coords attribute help to point out in where that shape is-->
+          <!--In sq(square) and rect(rectangle) situation, we need the x1,x2 y1,y2 for the coords -->
+          <!-- x1,x2 y1,y2 should be enough to generate that particular area-->
+          <!--i use paint to identify the coords-->
+        <area shape="sq" coords="112,204,347,389"  
+          target="_blank"
+          alt="pc"
+          href="https://www.youtube.com/watch?v=u_wLt2PPuCo&ab_channel=nayeoniie"> <!--in here we add the link in where it will go when we press that area-->  
+       
+          <!--another hit map within the same image--> 
+          <!--I used circle for it would be easier for me to pinpoint a clock--> 
+          <!--In this situation, we need the x1,y1 of the center of the circle and the radius of it which can be taken at the side(y2)-->
+        <area shape="circle" coords="299,105,105"
+        target="_blank"
+        alt="Clock"
+        href="https://www.timeanddate.com/worldclock/" >
+        
+        <!--since the bird is a complex and poly shape i used shape="poly"-->
+        <!--if we use poly as our shape, we can use as many x and y coordinates as we wish, enable to get desire result-->
+        <!--since i find it difficult to pin point the coordinates i used https://www.image-map.net/ to help me-->
+        <area shape="poly" coords="61,185,125,104,138,140,143,167" 
+        target="_blank"
+        alt="bird"
+        href="https://www.youtube.com/watch?v=Nmmsl2X_--U&ab_channel=NatureSoundscapes">
+</map>        
+
+    <!--To tell user where to press-->
+<p>Press the <em>screen</em> to go to youtube! Suprise song!</p>
+<p>Press the <em>clock</em> to go to world clock!</p>
+</body>
+</html>    
+ 

@@ -1,0 +1,127 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>simple block game</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .bg {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            background-color:black;
+        }
+
+        #pink {
+            width: 20px;
+            height: 50px;
+            background-color: hotpink;
+            position: relative;
+            top: 150px;
+        }
+       
+
+        @keyframes jump {
+            0% {
+                top: 150px;
+            }
+
+            30% {
+                top: 100px;
+            }
+
+            70% {
+                top: 100px;
+            }
+
+            100% {
+                top: 150px;
+            }
+        }
+
+        .animate {
+            animation: jump 0.3s linear;
+        }
+
+        #blue {
+            background-color: aqua;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 130px;
+            left: 500px;
+            animation: blue 2s infinite linear;
+        }
+
+        @keyframes blue {
+            0% {
+                left: 500px
+            }
+
+            100% {
+                left: -20px
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body onclick="jump()">
+    <div class="bg">
+        <div id="pink"></div>
+        <div id="blue"></div>
+    </div>
+    <p style="color:mediumpurple">Score: <span id="scoreSpan"></span></p>
+
+
+    <script >
+        var pink = document.getElementById("pink");
+        var blue = document.getElementById("blue");
+        var counter = 0;
+
+        function jump() {
+           
+            pink.classList.add("animate");
+            //the pink will only jump once because the class is set, in order to remove that, we will set a timeout
+            setTimeout(function () {
+                pink.classList.remove("animate");
+            }, 300);
+        }
+
+        //creating a function to check the values for the pink and blue block
+        //Comparing them in order to determine if the game is over or not
+
+        var check = setInterval(function () {
+            let pinkTop = parseInt(window.getComputedStyle(pink).getPropertyValue("top"));
+            let blueLeft = parseInt(window.getComputedStyle(blue).getPropertyValue("left"));
+           
+            if (blueLeft < 20 && blueLeft > -20 && pinkTop >= 130) {
+                blue.style.animation = "none";
+               
+                alert("Game Over. score: " + counter / 100);
+                counter = 0;
+                blue.style.animation = "blue 2s infinite linear";
+            } else {
+                counter++;
+                
+                document.getElementById("scoreSpan").innerHTML = counter / 100;
+            }
+        }, 10);
+
+    </script>
+</body>
+
+</html>
+
+
+
