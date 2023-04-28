@@ -1,0 +1,31 @@
+/* MY EXTERNAL STYLESHEETS FOR EmbedVid.html */
+
+/*COLOR OF THE WHOLE PAGE */
+body {
+    background-color: rgb(36, 39, 38);
+}
+
+/*POSITIONING THE VID/POSTER */
+.vid { 
+    display: flex; /* TO BE FLEXIBLE ON ITS DIV CONTAINER */
+    height: 100vh;/* VIEWPORT HEIGHT */
+    /* TO CENTER  */
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* COLOR OF THE TEXT */
+.heading {
+    text-align: center;
+    color: white;
+    background: rgb(32, 168, 119);
+}
+
+ /* TO FIX POSITIONING WHEN VIDEO IS PLAYED*/
+  video {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    max-height: 500px;
+  }
+

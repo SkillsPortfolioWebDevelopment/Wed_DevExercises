@@ -1,0 +1,33 @@
+<!--PUTTING VIDEO IN A WEBPAGE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="embedvid.css"><!--EXTERNAL STYLESHEET-->
+</head>
+
+<body>
+
+    <!--ADDING A SIMPLE VISUAL. WITH CLASS I CAN COPY THE MAIN CLASS WHICH IS "<div class="vid">" While changing/adding some elements in it-->
+
+<div class="vid heading">
+    <h1>APPRECIATE NATURE! - - - FILM BY : OLIVER WILSON</h1>
+</div>
+
+<div class="vid">
+    <!-- with video tags we can add customization of what format we want our video to be-->
+    <!--with poster i took a link of images on Pinterest-->
+    <!--"Controls" is to give the viewer the privilege to have control button-->
+    <!--"loop" is to loop the video-->
+  <video poster="https://i.pinimg.com/564x/9c/d7/c5/9cd7c5986380f7d7f580700a9c1e26a5.jpg" controls loop>
+    <!--Next I added the video link in source tag inside the video tag--> <!--the video is in my computer-->
+     <source src="outside.mp4" type="Video/mp4">  
+     Your browser does not support the video tag. <!--incase it doesn't work for some users-->  
+</video>
+</div>
+</body>
+</html>

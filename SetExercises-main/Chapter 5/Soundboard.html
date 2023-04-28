@@ -1,0 +1,59 @@
+<!--making a sound board similar to the given-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sound.css"> <!--External Styling sheets-->
+</head>
+<body>
+    <!--Text introduction to be styled at my CSS file-->
+    <div class="heading">
+      ALAN PARTRIDGE SOUNDBOARD           
+    </div> 
+    <!--Div class to style-->        
+    <div class="audio-container"> <!--positioning-->
+        <!--divs to add style on button-->
+        <!--this is all the same format for every sound ||
+            button tag for the button
+            class="btn" for my javascript later on
+            data-audio to add in the audio inside the button || further use at javascript-->
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Ah-Ha.mp3">Ah-Ha</button></div>                    
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Dan.mp3">Dan</button></div>             
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Back of The Net.mp3">Back Out The Net</button></div>
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Bang Out Of Order.mp3">Bang Out Of Order</button></div>             
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Jurassic Park.mp3">Jurassic Park</button></div>             
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Smell my Cheese.mp3">Smell my Cheese</button></div>  
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Goal.mp3">Goal</button></div>             
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Kiss my Face.mp3">Kiss my Face</button></div>             
+        <div class="audio-item"><button class="btn" data-audio="soundtrack/Hello Partridge.mp3">Hello Partridge</button></div>  
+    </div>
+
+    <!--Javascript part-->
+    <script>
+        const audioButtons = document.querySelectorAll('.btn');// This part of my script is to selects all the classes with the name btn and assigns them to the audioButtons//
+
+        // Creating a new Audio element and store it in audioPlayer variable//
+        const audioPlayer = new Audio();//to be use later on //
+
+        // for the audio to start playing //
+        //playAudio function is responsible for playing an audio file with the specified link//
+        function playAudio(audioSrc) { 
+            audioPlayer.src = audioSrc; // Setting the audio src of audioPlayer to the provided audio source//
+            audioPlayer.play();//to Enable for the sound to Play i used '.play'//
+        }
+         
+        //Loop & click//
+        //by 'forEach' loop method i was able to to iterate and customize through all the audioButtons elements//
+        audioButtons.forEach(button => { 
+            button.addEventListener('click', () => { // a click event listener is added for every button. //
+            // When click it will be played //
+                const audioSrc = button.dataset.audio; // Get the audio source from button tag//
+                playAudio(audioSrc);//Then play it plays the audio//
+            });
+        });
+    </script>
+</body>                       
+</html>
