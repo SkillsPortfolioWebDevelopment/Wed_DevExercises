@@ -11,13 +11,11 @@
    .audio-item {
       background-color: #BA90C6;
       color: white;
-      font-size: 15px;
       border: none;
       border-radius: 5px;
       transition: all 0.3s ease; /* giving it a nice transition*/
       padding: 25px;     
       margin:20px;     
-      font-size: 20px;     
       text-align: center;     
       border-radius: 15px; 
       border: white 2px solid; 

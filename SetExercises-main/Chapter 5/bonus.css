@@ -1,0 +1,167 @@
+/*STYLESHEET FOR MY BONUS SOUND BOARD */
+
+/*SOME OF THE STYLE WERE COPY-PASTED BY MY PREVIOUS WORK */
+body{       
+  background-image: url(backg.jpg);       
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+
+.header {
+  font-size: 25px;
+  padding: 10px;
+  width: 500px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  background-color: #BA90C6;
+  border: #fff solid 2px;
+  border-radius: 5px;
+  margin-left: 450px;
+}
+
+/*THIS SHOULD REMAIN HIDDEN */
+/*FOR JAVASCRIPT */
+.nav{
+  display: none;
+}
+
+/*FOR SECTION THAT ARE NOT ACTIVE SHOULD REMAIN HIDDEN UNTIL CLICKED */
+.section { /*hide all the sections*/
+  display: none;
+}
+
+ /* THE SECTION THAT WILL SHOW FIRST */
+ .section.active{ /*reveal only the selected section*/
+  display: block;
+  }
+
+/*POSITIONING THE BUTTON FOR "SAY IT" */
+.Talk{
+  position: absolute;
+  top: 300px;
+  left: 85px;
+}
+
+/*STYLING AND POSITIONING */
+.speakup{
+  padding: 25px 100px;
+  border-radius: 6px;
+  color: black ;
+  border: 3px solid rgb(0, 0, 0) ;
+  background-color: #fff;
+  border-radius: 23px;
+  letter-spacing: 0.3px ;
+  cursor: pointer;
+}
+
+/*ADDING A HOVER */
+.speakup:hover{
+  background-color: rgb(196, 98, 168);
+  color: #fff;
+}
+
+/* STYLING THE TEXTAREA WHERE THE USERS WILL BE ABLE TO TYPE ANYWORDS */
+textarea{
+  position: absolute;
+  resize:none;
+  width: 400px;
+  height: 200px;
+  border-radius: 6px;
+  border-radius: 23px;
+  text-align: center;
+  font-size: 1.5em;
+  top:80px;
+  border: black solid 3px;
+}
+
+/* * * * HERE I JUST FIGURE OUT HOW TO POSITION EVERY SECTION * * * * */
+.soundboard{
+  position: relative;
+  left: 135px;
+  margin-right: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px; 
+}
+
+.section-two  {
+  position: relative;
+  left: 135px;
+  margin-right: 350px; 
+
+}
+
+.section-three {
+  position: relative;
+  left: 135px;
+  margin-right: 350px; 
+}
+
+.audio-container {
+  display: grid;      
+  grid-template-columns: auto auto auto; 
+  padding: 20px;
+  } 
+  
+.Btn {
+  position: absolute;
+	top: 10px;
+	left: 298px;
+}
+ 
+
+/*THE SAME ELEMENT AS MY PREVIOUS WORK */
+.audio-item {
+  background-color: #BA90C6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  border: white 2px solid;
+}
+
+   .audio-item:hover {
+     background-color: #b977cb;
+     color: white;
+     transform: translateY(-2px);
+   }
+
+      
+.btn{  
+  font-size: 15px;   
+  background-color: transparent;            
+  width:150px;       
+  border:0;   
+  cursor: pointer;
+} 
+
+
+
+/* THE BUTTON FOR THE BUTTON THAT WILL SWITCH THE SECTIONS */
+  .next, .previous {
+    border-radius: 6px;
+    color: rgb(0, 0, 0) ;
+    border: 5px solid black ;
+    border-radius: 5px;
+    letter-spacing: 0.3px ;
+    cursor: pointer;
+    width: 10px;
+    padding: 10px;
+    visibility: hidden;
+  }
+
+/* The section sets the visibility of the "next" or "previous" button to visible when it is the active button*/
+  .activeBtn {
+    visibility: visible;
+    }
+
+
+  .down{
+    position: absolute;
+    top:300px;
+    left: 900px;
+      }
+
