@@ -1,0 +1,51 @@
+<!--Instruction: Create a simple Temperature calculator that will convert the temperature in fahrenheit to Celcius Kelvin. -->
+<!--Making a simple temperature calculator-->
+<!--This calculator will convert fahrenheit to celsius and kelvin--> 
+
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp.css"><!--EXTERNAL STYLESHEET-->
+  </head>
+
+  <body>
+    
+
+<div class="all">
+ <!--Input where users-->   
+ <h1>Temperature Converter - Input Fahrenheit</h1>
+    <div class="input-container"><!--Div for styling and division-->
+      <label for="fahrenheit">Fahrenheit:</label> <!--label should match the proceeding id-->
+      <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" autofocus> 
+      <!--the input which the user is allowed to put is number-->
+      <!--the id is associated with the label-->
+      <!--a placeholder to tell the user what to do-->
+    </div>
+
+
+    <!-------------This will be the output--------------->
+
+    <div class="output-container">
+      <label for="celsius">Celsius:</label>
+      <output id="celsius"></output><!--just gives an output// user wont be able to type in this-->
+    </div>
+
+
+    <div class="output-container">
+      <label for="kelvin">Kelvin:</label>
+      <output id="kelvin"></output>
+    </div>
+
+    <!-------------------------------------------------->
+  </div> 
+<div class="convert">  
+    <button id="convert">Convert</button> <!--button to press to convert-->
+</div>
+    
+    <script src="temp.js"></script> <!--external javascript-->
+</body>
+</html>
