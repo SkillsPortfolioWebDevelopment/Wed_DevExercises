@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    }
+
+ /* default of everything in the body */   
+body {
+  min-height: 100vh;
+  background-image: url(https://c.pxhere.com/photos/59/fe/rush_grass_texture_background_pattern_green_meadow_halme-1254201.jpg!d);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Poppins', sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* positioning the 9 holes container */
+.board{
+  width: 350px;
+  height: 350px;
+  /*grid for columns and rows of the holes */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap:15px ;
+  
+}
+
+/*score and timer spacing to the holes */
+h2{
+  margin-bottom:15px;
+  background-color: rgb(179, 206, 179);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/*styling the hole and proper position for the mole */
+.board .hole{
+  background-color: rgb(204, 158, 90);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* the mole! */
+.hole img{
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  bottom:0;
+  transform: translate(-50%); /*here we will be fixing the animation effect */
+  animation: animate .3s linear forwards;
+}
+                        /* the mole will be going down */
+
+@keyframes animate{
+  0%{
+    bottom: -100%;
+  }
+
+  100%{
+    bottom: 0%
+  }
+}
+
+/* styling the cursor */
+.cursor{
+  width: 100px;
+  height: 100px;
+  background-image: url('hammer.png');
+  background-size: 100%;
+  position:absolute;
+  transform: translate(-15px, -15px);
+  pointer-events:none;
+}
+/* when press it would tilt */
+.cursor.active {
+  transform: translate(-15%, -15%) rotate(-30deg);
+}
