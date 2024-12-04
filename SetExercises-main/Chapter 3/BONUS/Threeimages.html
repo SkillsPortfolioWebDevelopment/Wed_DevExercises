@@ -1,0 +1,95 @@
+<!--A file that shows a 
+-three different images with alt and title attribute
+-different style/filter for each images
+-An info bellow the images
+-This includes the  information on its copyright license.--> 
+
+
+<!Doctype html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width" />
+      <title>IMAGES </title>
+    </head>
+
+    <!--I used an internal stylesheet instead of external CSS file-->    
+    <style>
+/*for the webpage header to be more stylish and organize */
+        .header {
+            background-color: #37306B;
+        }
+
+        h1 {
+            text-align: center;
+            height: 200px;
+            line-height: 200px; 
+            color:white;   
+        }
+/*Fixing img and text information position */
+        .img {
+            display: flex; /* to align */
+			flex-wrap: wrap; /* to align */
+			justify-content: center;
+			align-items: center;
+			gap: 15px; /* to add gap on my text */
+			margin-top: 50px;
+		}
+        
+/* Description bellow style */
+        .info {
+			text-align: center;
+			font-size: 14px;
+			color: #999;
+		}
+
+/*putting different type of filter on three of the images */
+        
+
+        #img1 {
+            filter: hue-rotate(90deg); /* this change the image hue or color */
+        }
+
+
+        #img2 {
+            filter: sepia(50%); /* gives a warmer tone */
+            filter: drop-shadow(8px 8px 10px pink); /* shawdow around the image */
+            /* Notice that we can merge filters */
+
+        }
+
+        #img3 {
+            filter: invert(30%); /* turns the color to its opposite */
+            border-color: gold; /* adding a border arounf this image */
+            box-shadow: 5px 5px 5px black; /*And putting it in a box with black shadow */
+        }
+	</style>
+    
+    
+    <body>
+        <!-- using <div>,class and id's for styling purposes-->
+        <div class="header"><h1>CATS IMAGES HERE!</h1></div> 
+
+    
+        <div class="img"> <!--to help me align all inside this tag-->
+            <div id="img1"><!--to help me give filter-->
+                <!--All the images is taken online-->
+                <!--alt attribute is to display text incase the image is not available to appear-->
+                <!--title attribute function in image tag is shown when we hover around the image-->
+                <!--width and height attribute is to change the image size-->
+                <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Cat with butterfly" title="photo by Karina Vorozheeva" width="500" height="700">
+                <!--Giving information of this image in <div> tag--> <!--This also includes the link where i took the image-->
+                <div class="info"> Cat with butterfly -  Copyright: © Karina Vorozheeva. This image is from <a href ="https://unsplash.com/@_k_arinn" > unsplash.com </a> </div>
+
+            </div>   
+
+            <div id="img2"> <!--to help me give different filter for this image-->
+                <img src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="High-five with cat" title=" photo by Jonas Vincent"  width="600" height="800">
+                <div class="info"> High-five with cat - Copyright: © Jonas Vincent <a href="https://unsplash.com/@jonasvincentbe">unsplash.com</a> </div>
+            </div>   
+
+            <div id="img3">
+                <img src="https://images.unsplash.com/photo-1615796153287-98eacf0abb13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Cat with nature" title="photo by zhang kaiyv " width="500" height="700">
+                <div class="info"> Cat with nature - Copyright: © zhang kaiyv. This image is from <a href="https://unsplash.com/@zhangkaiyv">unsplash.com</a> </div>
+            </div> 
+        </body>
+        </html>          

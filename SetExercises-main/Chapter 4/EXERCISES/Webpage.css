@@ -1,0 +1,125 @@
+/* EXTERNAL CSS FOR MY "STRUCTURINGAWEBPAGE.HTML"  */
+
+/*THE DEFAULT STYLE OF EVERYTHING INSIDE THE BODY TAG*/
+body{
+    font-family: 'Arial';
+    margin: 0px;
+    font-size: 16.8px;
+} 
+
+/* * * * * STYLING THE UPPER PART OF THE PAGE * * * * */
+
+/* ADDING COLOR TO AND SPACE TO EVERYTHING IN THE HEADER TAG */
+header {
+padding: 0px;
+background:#17072b ;
+}
+
+/* POSITIONING THE "DIGI FEST 2022" TEXT */
+.title {
+    line-height:60px;
+    height: 60px;
+    padding-top: 3px;
+}
+
+/* DESIGNING AND CENTERING THE  "DIGI FEST 2022" TEXT*/
+h1 {
+    font-family: 'Tahoma';
+    font-size: 40px;
+    text-align: center;
+    color:white;
+}
+
+/* NAV TAG-MENU BAR PART */
+/* DESIGNING AND POSITIONING EVERYTHING INSIDE THE NAV TAG*/
+nav {
+    color:white;
+    background-color: #17072b ;
+    font-family: 'Tahoma';
+    line-height: 100px;
+    height: 95px;
+    font-size: 25px;
+
+}
+
+/* CENTERING THE UNORDERED LIST */
+nav ul {
+    list-style: none; 
+    margin: 0;
+    text-align: center;
+}
+
+/* LIST ITEM DISTANCE FROM EACH OTHER */
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* * * * * STYLING THE ASIDE PART OF THE PAGE */
+
+/*POSITIONING AND DESIGNING EVERYTHING IN THE ASIDE TAG*/
+aside {
+    float:right; /*PUTTING ASIDE TO THE RIGHT SIDE */
+    background-color: #172d67;
+    color: white;
+    width: 400px;
+    height: 427px;
+    margin-top: 10px;
+    margin-left: 18px;
+    font-family: 'arial';
+    font-size: 15px;
+}
+
+/*ADDING PROPER UNDERLINE AND STYLE TO "LINE UP" TEXT" */
+h2 {
+    margin-left: 10px;
+    font-family: 'Tahoma';
+    border-bottom: white solid 3px;
+    margin-right: 290px; /* FIXING THE BORDER-BOTTOM WHICH ACTS AS THE UNDERLINE */
+    font-size: 25px;
+}
+
+/* POSITIONING AND CHANGING FONT SIZE OF THE TEXT UNDER "LINE UP" */
+#line {
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+/*STYLING SECTION PART INSIDE THE ASIDE TAG */
+
+/*LINING AND POSITIONING OF THE OBJECT INSIDE SECTION TAG */
+section {
+    display: flex; /* 2 IMAGES COMPRESS TOGETHER */
+    gap: 10px; /* ADD A GAP BETWEEN THEM */
+    margin-right:50px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+/* * * * * STYLING THE  MAIN PART OF THE PAGE * * * * */
+/*ADDING MARGIN FOR SPACES */
+main {
+margin-left: 30px;
+margin-right: 500px;
+}
+
+/* STYLING THE "WELCOME"TEXT */
+#Wel {
+    font-family: 'Tahoma';
+    color:#17072b;
+    margin-left: auto;
+
+}
+
+/* * * * * STYLING THE FOOTER PART OF THE PAGE */
+footer {
+    background-color: #8c15e9;
+    color:white;
+    text-align:center;
+    font-size: 15px;
+    /*POSITIONING */
+    margin-top: 12px;
+    height: 33px;
+    line-height: 33px;
+}
